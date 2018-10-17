@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -eu
+
+mkdir -p /cache
+
+exec /go/bin/proxy -config_file /config.toml "$@"
